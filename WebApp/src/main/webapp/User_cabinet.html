@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Личный кабинет</title>
+	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/main2.css">
+</head>
+<body>
+		<aside>
+		<div id="login">
+		
+			<form name="f1" method="get" action="">
+			<p> <label for="login">Логин:</label> </p>
+			<br>
+				<p align = "center">                   
+                    <input id="login" type="text" name="login" placeholder="Логин" required>
+                </p>
+            <br>
+                <p> <label for="password">Пароль:</label> </p>
+            <br>
+                <p align = "center">       
+                    <input id="password" type="password" name='password' placeholder="Старый пароль" required>
+                </p>
+                <br>
+                <p align = "center">   
+                    <input id="password" type="password" name='password' placeholder="Новый пароль" required>
+                </p>
+                <br>
+                <p align = "center">   
+                    <input id="password" type="password" name='password' placeholder="Повторить пароль" required>
+                </p>
+                <br>
+                <p><label for="email">Email:</label></p>
+                <br>
+                <p align = "center">   
+                    <input type="text" id="emailReg" name="email" placeholder="email" required>
+                </p>
+                <br>
+                <br>
+				<p align = "center">   
+                <input type="button" class="btn-submit" onclick="main.registration()" name="singin_button" value="Save">
+                </p>
+                <br>
+                <br>
+            </form>
+		</div>	
+		<div>
+		    <form>
+		        <p align = "center">
+                    <textarea type="text" rows = 15px placeholder="Comment" required></textarea>
+		        </p>
+		        <br>
+				<p align = "center">   
+                <input type="button" class="btn-submit" onclick="main.registration()" name="singin_button" value="Add comment">
+                </p>
+		    </form>
+		</div>
+		</aside>
+		
+		
+		<div class="accordian">
+			<ul>
+				<li>
+					<div class="image_title">
+						<a href="#">1.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/1.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+				<li>
+					<div class="image_title">
+						<a href="#">2.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/2.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+				<li>
+					<div class="image_title">
+						<a href="#">3.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/3.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+				<li>
+					<div class="image_title">
+						<a href="#">4.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/4.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+				<li>
+					<div class="image_title">
+						<a href="#">5.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/5.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+				<li>
+					<div class="image_title">
+						<a href="#">6.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/6.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+				<li>
+					<div class="image_title">
+						<a href="#">7.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/7.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+				<li>
+					<div class="image_title">
+						<a href="#">8.jpg</a>
+					</div>
+					<a href="#">
+						<img src="images/8.jpg" width=600 height=400 alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<section id="dside">
+		    <form>
+		        <p> <input id="inputpath" type="inputpath" name='inputpath' size = 150px placeholder="InputPath" required></p><br>
+		        <p> <input id="imageName" type="imageName" name='imageName' size = 150px placeholder="ImageName" required></p><br>
+		        <p> <input id="outputpath" type="outputpath" name='outputpath' size = 150px placeholder="OutputPath" required></p><br>
+		    </form>
+		</section>
+	</body>

@@ -4,4 +4,13 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>APIServlet</servlet-name>
+    <servlet-class>com.webConvertation.controller.APIHandlerServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>APIServlet</servlet-name>
+    <url-pattern>/WebConvertationProject</url-pattern>
+  </servlet-mapping>
 </web-app>

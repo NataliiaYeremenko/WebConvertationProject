@@ -4,13 +4,13 @@
 var main = {
     registration: function () {
         var log = document.getElementById("logReg").value;
-        var mail = document.getElementById("mailReg").value;
+        var email = document.getElementById("emailReg").value;
         var pass = document.getElementById("passReg").value;
         $.ajax({
             type: "POST",
             url: "/WebConvertationProject",
             dataType: "json",
-            data: {requestType: "registration", login: log, password: pass, email: mail},
+            data: {requestType: "registration", login: log, email: email, password: pass},
             success: function (data) {
                 console.log(data);
             }
@@ -19,6 +19,7 @@ var main = {
 
     log_in: function () {
         var log = document.getElementById("login").value;
+        var email = document.getElementById("email").value;
         var pass = document.getElementById("password").value;
         $.ajax({
             type: "POST",
@@ -29,7 +30,7 @@ var main = {
                 if(data.name == "error")
                     document.location.href = 'errorPage.html';
                 else
-                    document.location.href = 'User_cabinet.html'
+                    document.location.href = 'User_cabinet.html';
                     window.onload = function() {
                         document.getElementById("name").innerHTML = data.name;
                         document.getElementById("index").innerHTML = data.indexNumber;

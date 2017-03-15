@@ -34,7 +34,7 @@ public class RegistrationServlet extends APIHandlerServlet.APIRequestHandler {
         user.setPassword(password);
         Factory.getInstance().getUserDAO().addUser(user);
 
-        System.out.println(login + email + password);
+        System.out.println("login: " + login + "; email: " + email + "; password: " + password);
         return null;
     }
 }

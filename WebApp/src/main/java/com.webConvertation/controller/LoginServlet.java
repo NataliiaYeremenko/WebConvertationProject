@@ -31,13 +31,13 @@ public class LoginServlet extends APIHandlerServlet.APIRequestHandler {
         try {
             param = loginManager.loginController(map);
         }catch(Exception e){
-            jsonObject.put("login","error");
-            jsonObject.put("password","not_exist");
+            jsonObject.put("name","error");
+            jsonObject.put("indexNumber","not_exist");
             return jsonObject;
         }
 
-        jsonObject.put("login", param[0]);
-        jsonObject.put("password", param[0]);
+        jsonObject.put("name", param[0]);
+        jsonObject.put("indexNumber", param[1]);
         return jsonObject;
     }
 }

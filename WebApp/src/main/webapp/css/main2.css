@@ -42,9 +42,27 @@ aside{
     float: left;
 }
 
+TD {
+    vertical-align: top; /* Выравнивание по верхнему краю ячейки */
+    width: 100%;
+	height: auto;
+    float: left;
+    background-color: darkgrey;
+    border-spacing: 7px 11px; /* Расстояние между ячейками */ 
+   }
+   #col1 {
+    width: 50%; /* Ширина первой колонки */
+    
+   }
+   #col2 {
+    width: 50%; /* Ширина второй колонки */
+    
+   }
+ 
+   
+
 section#dside{
-	background-color: darkgrey;
-    margin: 20px 10px auto;
+	margin: 20px 10px auto;
     width: 80%;
 	height: auto;
     float: left;

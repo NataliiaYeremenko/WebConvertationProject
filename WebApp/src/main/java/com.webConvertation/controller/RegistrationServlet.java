@@ -1,5 +1,7 @@
 package com.webConvertation.controller;
 
+import com.webConvertation.dao.entity.User;
+import com.webConvertation.hibernateFactory.Factory;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONStreamAware;
 
@@ -23,7 +25,16 @@ public class RegistrationServlet extends APIHandlerServlet.APIRequestHandler {
 
     @Override
     protected JSONStreamAware processRequest(HttpServletRequest request) throws Exception {
-        System.out.println("work");
+        String login = request.getParameter("login");
+        String email = request.getParameter("email");
+        String password = request.getParameter("password");
+        User user = new User();
+        user.setEmail(email);
+        user.setName(login);
+        user.setPassword(password);
+        Factory.getInstance().getUserDAO().addUser(user);
+
+        System.out.println(login + email + password);
         return null;
     }
 }

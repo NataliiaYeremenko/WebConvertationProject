@@ -2,7 +2,7 @@
  * Created by Abakumov on 05.09.2016.
  */
 var main = {
-    add_image: function () {
+    addInputFile: function () {
         var imageType = document.getElementById("imageType").value;
         var date =$("#date").value; //document.getElementById("date").value;
         var imageName = document.getElementById("imageName").value;
@@ -23,7 +23,7 @@ var main = {
         });
     },
 
-    doSomething_image: function () {
+    addOutputFile: function () {
         var imageType = document.getElementById("imageType").value;
         var date =$("#date").value; //document.getElementById("date").value;
         var imageName = document.getElementById("imageName").value;
@@ -34,7 +34,7 @@ var main = {
         var outputPath = document.getElementById("outputPath").value;
         var quality = document.getElementById("quality").value;
 
-        var type = "doSomething_Image";
+        var type = "changeImage";
         var  index = 1;
         $.ajax({
             type: "POST",

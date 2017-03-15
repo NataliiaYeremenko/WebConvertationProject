@@ -4,7 +4,7 @@
 var main = {
     registration: function () {
         var log = document.getElementById("logReg").value;
-        var email = document.getElementById("emailReg").value;
+        var email = document.getElementById("mailReg").value;
         var pass = document.getElementById("passReg").value;
         $.ajax({
             type: "POST",
@@ -13,13 +13,13 @@ var main = {
             data: {requestType: "registration", login: log, email: email, password: pass},
             success: function (data) {
                 console.log(data);
+                document.location.href = 'User_cabinet.html';
             }
         });
     },
 
     log_in: function () {
         var log = document.getElementById("login").value;
-        var email = document.getElementById("email").value;
         var pass = document.getElementById("password").value;
         $.ajax({
             type: "POST",
